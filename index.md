@@ -1,13 +1,9 @@
 ---
-title: Jekyll Serif Theme
+title: HSC-Bench
+description: HSC-Bench is an open-source benchmark for service computing, designed to support unified evaluation of service recommendation and service composition models.
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
-show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# HSC-Bench: A Unified Benchmark for Service Recommendation and Service Composition
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+HSC-Bench is an open-source benchmark for service computing. It provides standardized datasets, evaluation metrics, baseline implementations, leaderboards, and **HSC+**, a large-scale AI model service dataset constructed from Hugging Face services.
