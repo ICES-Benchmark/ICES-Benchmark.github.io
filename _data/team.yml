@@ -1,0 +1,19 @@
+maintainers:
+  - name: Maintainer Name
+    role: Ph.D. Student / Benchmark Maintainer
+    affiliation: Research Group, University / Institute
+    homepage: '#'
+  - name: Data Maintainer
+    role: Dataset and Evaluation Protocol
+    affiliation: Research Group, University / Institute
+    homepage: '#'
+supervisors:
+  - name: Supervisor Name
+    role: Supervisor
+    affiliation: School / Department, University
+    interests: Service computing, AI service composition, QoS optimization
+    homepage: '#'
+group:
+  name: Service Computing Research Group
+  affiliation: University / Institute
+  description: Research group maintaining HSC-Bench, HSC+, baselines, evaluation scripts, and public benchmark results.

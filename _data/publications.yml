@@ -1,0 +1,52 @@
+- year: 2026
+  title: 'HSC-Bench: A Comprehensive Benchmark for Unified Service Recommendation and Composition Evaluation'
+  type: Benchmark
+  authors: 'TBD'
+  venue: 'TBD'
+  pdf: '#'
+  code: '#'
+  bibtex: |-
+    @inproceedings{hscbench2026,
+      title={HSC-Bench: A Comprehensive Benchmark for Unified Service Recommendation and Composition Evaluation},
+      author={TBD},
+      year={2026}
+    }
+- year: 2024
+  title: 'HSC: An Artificial Intelligence Service Composition Dataset from Hugging Face'
+  type: Dataset
+  authors: 'TBD'
+  venue: 'TBD'
+  pdf: '#'
+  code: '#'
+  bibtex: |-
+    @inproceedings{hsc2024,
+      title={HSC: An Artificial Intelligence Service Composition Dataset from Hugging Face},
+      author={TBD},
+      year={2024}
+    }
+- year: 2024
+  title: 'GSL-Mash: Enhancing Mashup Creation Service Recommendations through Graph Structure Learning'
+  type: Service Recommendation
+  authors: 'TBD'
+  venue: 'TBD'
+  pdf: '#'
+  code: '#'
+  bibtex: |-
+    @inproceedings{gslmash2024,
+      title={GSL-Mash: Enhancing Mashup Creation Service Recommendations through Graph Structure Learning},
+      author={TBD},
+      year={2024}
+    }
+- year: 2022
+  title: 'A Graph Neural Network and Pointer Network-based Approach for QoS-aware Service Composition'
+  type: Service Composition
+  authors: 'TBD'
+  venue: 'TBD'
+  pdf: '#'
+  code: '#'
+  bibtex: |-
+    @inproceedings{gnnpnsc2022,
+      title={A Graph Neural Network and Pointer Network-based Approach for QoS-aware Service Composition},
+      author={TBD},
+      year={2022}
+    }

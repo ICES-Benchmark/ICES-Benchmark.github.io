@@ -1,0 +1,7 @@
+model,dataset,model_type,utility,response_time,cost,throughput,availability,reliability,code,paper,official_reproduction,unified_protocol
+GNNPN-SC,HSC+,Learning-based,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes
+SDFGA,HSC+,Optimization-based,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes
+DAAGA,HSC+,Optimization-based,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes
+GA,QWS,Optimization-based,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Yes,TBD
+LLM Planner,HSC+,LLM-based,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes
+Multi-agent pipeline,HSC+,LLM-based,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes

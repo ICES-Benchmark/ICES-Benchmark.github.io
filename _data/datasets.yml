@@ -1,0 +1,49 @@
+- name: ProgrammableWeb
+  tasks: Service Recommendation / Service Composition
+  domain: Web API
+  fields: Mashup, API, invocation relations, tags, descriptions
+  note: Classic Web API recommendation and composition dataset; platform availability may limit reproducibility.
+  version: TBD
+  download: '#'
+- name: QWS
+  tasks: Service Composition / QoS Optimization
+  domain: Web Service
+  fields: Response time, throughput, availability, reliability, cost-like QoS attributes
+  note: Classic QoS benchmark for service composition and multi-objective optimization.
+  version: TBD
+  download: '#'
+- name: WS-Dream
+  tasks: QoS Prediction / Service Recommendation / Composition
+  domain: Web Service
+  fields: Response time, throughput, user-service invocation matrix
+  note: Useful for QoS prediction and recommendation; functional semantics are relatively weak.
+  version: TBD
+  download: '#'
+- name: HSC
+  tasks: Service Recommendation / Service Composition
+  domain: AI Model Service
+  fields: AI model services, service workflows, QoS, function tags
+  note: Hugging Face based AI service composition dataset.
+  version: TBD
+  download: '#'
+- name: HSC+
+  tasks: Service Recommendation / Service Composition / QoS
+  domain: AI Model Service
+  fields: Function tags, input/output parameters, QoS, requirements, workflows
+  note: Core dataset of HSC-Bench for unified service computing evaluation.
+  version: v1.0 draft
+  download: '#'
+- name: MovieLens
+  tasks: General Recommendation Baseline
+  domain: Recommender System
+  fields: Users, items, ratings
+  note: Used to validate generalization of recommendation baselines.
+  version: TBD
+  download: '#'
+- name: Amazon
+  tasks: Cross-domain Recommendation Baseline
+  domain: E-commerce
+  fields: Users, products, reviews, interactions
+  note: Used for cross-domain recommendation baseline comparison.
+  version: TBD
+  download: '#'

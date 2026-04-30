@@ -1,21 +1,45 @@
 main:
-  - name: "Services"
-    url: "/services/"
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Recommendation"
+    url: "/recommendation/"
     weight: 2
+  - name: "Composition"
+    url: "/composition/"
+    weight: 3
+  - name: "HSC+"
+    url: "/hsc-plus/"
+    weight: 4
+  - name: "Leaderboard"
+    url: "/leaderboard/"
+    weight: 5
+  - name: "Download"
+    url: "/download/"
+    weight: 6
   - name: "Team"
     url: "/team/"
-    weight: 3
-  - name: "About"
-    url: "/about/"
-    weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
+    weight: 7
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Contact"
-    url: "/contact/"
+  - name: "Recommendation"
+    url: "/recommendation/"
     weight: 2
+  - name: "Composition"
+    url: "/composition/"
+    weight: 3
+  - name: "HSC+"
+    url: "/hsc-plus/"
+    weight: 4
+  - name: "Leaderboard"
+    url: "/leaderboard/"
+    weight: 5
+  - name: "Download"
+    url: "/download/"
+    weight: 6
+  - name: "Team"
+    url: "/team/"
+    weight: 7

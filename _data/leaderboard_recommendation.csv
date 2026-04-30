@@ -1,0 +1,7 @@
+model,dataset,model_type,k,p5,p10,r5,r10,ndcg5,ndcg10,mrr,code,paper,official_reproduction,unified_split
+SRLCF,HSC+,Benchmark Model,5,TBD,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Yes,Yes
+MTFM,HSC+,Neural,10,TBD,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes
+GSAT,HSC+,Graph-based,10,TBD,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes
+GSL-Mash,ProgrammableWeb,Graph-based,10,TBD,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,TBD
+Frequency,HSC+,Traditional,10,TBD,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Yes,Yes
+LLM-based reranking,HSC+,LLM-based,10,TBD,TBD,TBD,TBD,TBD,TBD,TBD,#,#,Planned,Yes

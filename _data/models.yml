@@ -1,0 +1,114 @@
+recommendation:
+  - name: Frequency
+    family: Traditional / Statistical
+    description: Simple frequency baseline for interpretable and reproducible recommendation.
+    code: '#'
+  - name: User-Similarity
+    family: Traditional / Statistical
+    description: Collaborative filtering baseline based on similar mashups or users.
+    code: '#'
+  - name: Matrix Factorization
+    family: Traditional / Statistical
+    description: Latent factor model for service invocation interactions.
+    code: '#'
+  - name: MLP
+    family: Neural Recommendation
+    description: Neural baseline over text, metadata, or interaction features.
+    code: '#'
+  - name: TextCNN
+    family: Neural Recommendation
+    description: Text encoder baseline for service and requirement descriptions.
+    code: '#'
+  - name: T2L2
+    family: Neural Recommendation
+    description: Representative learning-based service recommendation model.
+    code: '#'
+  - name: MTFM
+    family: Neural Recommendation
+    description: Multi-task factorization model for service recommendation.
+    code: '#'
+  - name: NGCF
+    family: Graph-based Recommendation
+    description: Neural graph collaborative filtering baseline.
+    code: '#'
+  - name: HHAN
+    family: Graph-based Recommendation
+    description: Heterogeneous hierarchical attention network baseline.
+    code: '#'
+  - name: GSAT
+    family: Graph-based Recommendation
+    description: Graph structure aware service recommendation baseline.
+    code: '#'
+  - name: GSL-Mash
+    family: Graph-based Recommendation
+    description: Graph structure learning method for mashup service recommendation.
+    code: '#'
+  - name: T5
+    family: Pre-trained / Generative
+    description: Text-to-text generation baseline for candidate service generation or reranking.
+    code: '#'
+  - name: ServiceBERT
+    family: Pre-trained / Generative
+    description: Pre-trained service representation model for matching and reranking.
+    code: '#'
+  - name: LLM-based reranking
+    family: Pre-trained / Generative
+    description: Large language model reranking over retrieved candidate services.
+    code: '#'
+  - name: SRLCF
+    family: Benchmark Model
+    description: Example benchmark model for unified evaluation workflow.
+    code: '#'
+composition:
+  - name: GA
+    family: Heuristic / Evolutionary Optimization
+    description: Genetic algorithm baseline for QoS-aware service composition.
+    code: '#'
+  - name: DAAGA
+    family: Heuristic / Evolutionary Optimization
+    description: Evolutionary optimization method for multi-objective composition.
+    code: '#'
+  - name: MWOA
+    family: Heuristic / Evolutionary Optimization
+    description: Whale optimization variant for QoS composition search.
+    code: '#'
+  - name: CSSA
+    family: Heuristic / Evolutionary Optimization
+    description: Swarm intelligence baseline for service composition optimization.
+    code: '#'
+  - name: SDFGA
+    family: Heuristic / Evolutionary Optimization
+    description: Genetic algorithm variant for service dependency and QoS constraints.
+    code: '#'
+  - name: BPSC
+    family: Heuristic / Evolutionary Optimization
+    description: Population-based service composition optimization baseline.
+    code: '#'
+  - name: PK-IDPSO
+    family: Heuristic / Evolutionary Optimization
+    description: Particle swarm optimization method for QoS-aware composition.
+    code: '#'
+  - name: GNNPN-SC
+    family: Learning-based Service Composition
+    description: Graph neural network and pointer network based workflow generation model.
+    code: '#'
+  - name: RL-based composition
+    family: Learning-based Service Composition
+    description: Reinforcement learning formulation for sequential composition decisions.
+    code: '#'
+  - name: Pointer-network based composition
+    family: Learning-based Service Composition
+    description: Sequence generation baseline for executable service workflows.
+    code: '#'
+  - name: LLM Planner
+    family: LLM / Agentic
+    description: LLM-based planner for requirement-to-workflow generation.
+    code: '#'
+  - name: Multi-agent pipeline
+    family: LLM / Agentic
+    description: Agentic service generation pipeline from natural-language need to service plan.
+    code: '#'
+  - name: Code completion agent
+    family: LLM / Agentic
+    description: Agent that translates workflow plans into executable code artifacts.
+    code: '#'

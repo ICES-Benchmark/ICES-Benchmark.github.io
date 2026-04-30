@@ -1,0 +1,24 @@
+- step: 1
+  name: Hugging Face Model Collection
+  description: Collect publicly accessible Hugging Face model services.
+- step: 2
+  name: Endpoint Probing
+  description: Check endpoint accessibility and record HTTP status and invocation results.
+- step: 3
+  name: Metadata Extraction
+  description: Extract service name, author, description, URL, update time, and input/output parameters.
+- step: 4
+  name: LLM-assisted Annotation
+  description: Use large language models to annotate input type, output type, and functional categories.
+- step: 5
+  name: Human Verification
+  description: Resolve ambiguous samples through volunteer and domain-expert validation.
+- step: 6
+  name: QoS Invocation
+  description: Invoke services repeatedly to collect response time, waiting time, reliability, and successability.
+- step: 7
+  name: Workflow Generation
+  description: Generate syntactically valid workflows from input/output transformation constraints.
+- step: 8
+  name: Requirement Generation
+  description: Use LLMs to generate natural-language user requirements for verified workflows.

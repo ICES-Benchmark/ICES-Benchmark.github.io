@@ -3,67 +3,138 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
+<section class="hero hero-benchmark">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-12 col-lg-7">
+        <p class="eyebrow">Service Computing Benchmark Hub</p>
         {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ '/hsc-plus/' | relative_url }}">HSC+ Dataset</a>
+          <a class="button button-secondary" href="{{ '/recommendation/' | relative_url }}">Recommendation</a>
+          <a class="button button-secondary" href="{{ '/composition/' | relative_url }}">Composition</a>
+          <a class="button button-secondary" href="{{ '/leaderboard/' | relative_url }}">Leaderboard</a>
+          <a class="button button-ghost" href="{{ site.data.contact.github_url }}">GitHub</a>
+        </div>
       </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
-
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.services limit: limit %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+      <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+        <div class="hero-panel">
+          <div class="metric-grid">
+            <div><strong>2</strong><span>Unified Tasks</span></div>
+            <div><strong>7</strong><span>Dataset Families</span></div>
+            <div><strong>15+</strong><span>Recommendation Baselines</span></div>
+            <div><strong>10+</strong><span>Composition Baselines</span></div>
+          </div>
+          <div class="pipeline-mini">
+            <span>User Requirement</span><b>→</b><span>Service Recommendation</span><b>→</b><span>Workflow Composition</span><b>→</b><span>Evaluation</span>
           </div>
         </div>
       </div>
-      {% endfor %}
     </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+  </div>
+</section>
+
+<section class="strip strip-grey">
+  <div class="container py-6 py-md-10">
+    <div class="section-heading">
+      <p class="eyebrow">Motivation</p>
+      <h2>Why HSC-Bench?</h2>
+      <p>HSC-Bench addresses fragmented datasets, inconsistent protocols, separated task evaluation, and weak service reproducibility in service computing research.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-xl-3"><div class="info-card"><h3>Fragmented Data</h3><p>ProgrammableWeb, QWS, WS-Dream, HSC, MovieLens, and Amazon differ in fields, preprocessing, and task assumptions.</p></div></div>
+      <div class="col-12 col-md-6 col-xl-3"><div class="info-card"><h3>Inconsistent Evaluation</h3><p>Different metrics, candidate sets, and splits make fair comparison difficult across published models.</p></div></div>
+      <div class="col-12 col-md-6 col-xl-3"><div class="info-card"><h3>End-to-end Gap</h3><p>Recommendation and composition are often evaluated separately although candidate quality affects workflow quality.</p></div></div>
+      <div class="col-12 col-md-6 col-xl-3"><div class="info-card"><h3>Reproducibility Issues</h3><p>Expired links, inactive services, and non-repeatable QoS measurements reduce long-term benchmark value.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="container py-6 py-md-10">
+    <div class="section-heading">
+      <p class="eyebrow">Supported Tasks</p>
+      <h2>Recommendation and composition under one protocol</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <a class="task-card" href="{{ '/recommendation/' | relative_url }}">
+          <span class="task-kicker">Task 01</span>
+          <h3>Service Recommendation</h3>
+          <p>Given user requirements, mashup descriptions, service metadata, tags, and optional QoS attributes, generate a Top-K candidate service list.</p>
+          <strong>Metrics: Precision@K, Recall@K, F1@K, NDCG@K, MRR</strong>
+        </a>
+      </div>
+      <div class="col-12 col-lg-6">
+        <a class="task-card" href="{{ '/composition/' | relative_url }}">
+          <span class="task-kicker">Task 02</span>
+          <h3>Service Composition</h3>
+          <p>Translate complex user needs into service sequences, DAGs, or workflows while satisfying functional and QoS constraints.</p>
+          <strong>Metrics: Utility, RT, Cost, Throughput, Availability, Reliability</strong>
+        </a>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-{% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
+<section class="strip strip-grey">
+  <div class="container py-6 py-md-10">
+    <div class="section-heading">
+      <p class="eyebrow">Dataset Overview</p>
+      <h2>Dataset families covered by the hub</h2>
+    </div>
+    <div class="table-responsive">
+      <table class="benchmark-table">
+        <thead><tr><th>Dataset</th><th>Tasks</th><th>Domain</th><th>Main Fields</th><th>Notes</th></tr></thead>
+        <tbody>
+          {% for dataset in site.data.datasets %}
+          <tr>
+            <td><strong>{{ dataset.name }}</strong></td>
+            <td>{{ dataset.tasks }}</td>
+            <td>{{ dataset.domain }}</td>
+            <td>{{ dataset.fields }}</td>
+            <td>{{ dataset.note }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
+<section class="strip">
+  <div class="container py-6 py-md-10">
+    <div class="row g-4">
+      <div class="col-12 col-lg-7">
+        <div class="section-heading left">
+          <p class="eyebrow">Leaderboard Preview</p>
+          <h2>Static first, protocol-driven from day one</h2>
+          <p>The first version uses YAML/CSV-backed tables and manual pull requests. It can later evolve into automatic online evaluation.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6"><div class="info-card"><h3>Recommendation Top Models</h3><ul class="clean-list">{% for row in site.data.leaderboard_recommendation limit:3 %}<li><strong>{{ row.model }}</strong><span>{{ row.dataset }} · {{ row.model_type }}</span></li>{% endfor %}</ul></div></div>
+          <div class="col-12 col-md-6"><div class="info-card"><h3>Composition Top Models</h3><ul class="clean-list">{% for row in site.data.leaderboard_composition limit:3 %}<li><strong>{{ row.model }}</strong><span>{{ row.dataset }} · {{ row.model_type }}</span></li>{% endfor %}</ul></div></div>
         </div>
       </div>
-      {% endfor %}
-
+      <div class="col-12 col-lg-5">
+        <div class="highlight-card">
+          <p class="eyebrow">HSC+ Highlight</p>
+          <h2>One dataset for recommendation, composition, and QoS analysis.</h2>
+          <p>HSC+ is built from Hugging Face model services and enriched with functional annotations, QoS measurements, realistic user requirements, and executable workflows.</p>
+          <a class="button button-primary" href="{{ '/hsc-plus/' | relative_url }}">Explore HSC+</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-{% endif %}
+</section>
+
+<section class="strip strip-grey">
+  <div class="container py-6 py-md-10">
+    <div class="section-heading">
+      <p class="eyebrow">Team & Publications</p>
+      <h2>Maintained as a long-term research asset</h2>
+      <p>Find maintainers, supervisors, group information, representative papers, BibTeX entries, and contact channels.</p>
+      <a class="button button-secondary" href="{{ '/team/' | relative_url }}">View Team & Publications</a>
+    </div>
+  </div>
+</section>

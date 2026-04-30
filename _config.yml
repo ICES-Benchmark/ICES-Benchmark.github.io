@@ -1,43 +1,19 @@
-url: "https://ices-benchmark.github.io"
-baseurl: "/jekyll-serif-theme/"
+baseurl: ''
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'HSC-Bench'
+description: 'A unified benchmark for service recommendation and service composition.'
+url: ''
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
-
-home: 
-  limit_services: 6
-
-collections:
-  services:
-    output: true
-    sort_by: weight
-  team:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
+  mobile: 'images/logo/logo-mobile.svg'
+  mobile_height: '36px'
+  mobile_width: '36px'
+  desktop: 'images/logo/logo.svg'
+  desktop_height: '36px'
+  desktop_width: '170px'
 
 sass:
-  style: compressed # possible values: nested expanded compact compressed
-
-plugins:
-  - jekyll-environment-variables
+  style: compressed
 
 exclude:
   - Gemfile
@@ -50,3 +26,4 @@ exclude:
   - LICENSE.md
   - LICENSE
   - README.md
+  - netlify.toml

@@ -1,0 +1,26 @@
+- field: service_name
+  description: Service or model name.
+- field: author
+  description: Service author or model publisher.
+- field: function
+  description: Functional category that the service can satisfy.
+- field: description
+  description: Service description from the provider or enriched annotation.
+- field: url
+  description: Model or service access link.
+- field: input_parameter
+  description: Input data required by the service.
+- field: output_parameter
+  description: Output returned by the service.
+- field: downloads
+  description: Recent monthly download count.
+- field: likes
+  description: Number of user likes.
+- field: response_time
+  description: Time from sending a request to receiving a response.
+- field: waiting_time
+  description: Model initialization or loading waiting time.
+- field: reliability
+  description: Ratio of successful HTTP responses over all requests.
+- field: successability
+  description: Ratio of valid task completions that return correct usable outputs.
