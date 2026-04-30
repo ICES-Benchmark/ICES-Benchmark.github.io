@@ -1,5 +1,5 @@
 url: "https://ices-benchmark.github.io"
-baseurl: '/'
+baseurl: "/jekyll-serif-theme/"
 permalink: pretty
 title: 'Jekyll Serif'
 
